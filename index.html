@@ -1,79 +1,476 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>Ricardo H. B. | Diseño, Desarrollo y Sistemas.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/foundation.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/isotope.css" rel="stylesheet">
+		<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">
+		<link href="css/validationEngine.jquery.css" rel="stylesheet">
+		<link href="css/archtek-init.css" rel="stylesheet">
+		
+		<!--[if IE 8]>
+		<link href="css/foundation-ie8.css" rel="stylesheet">
+		<link href="css/archtek-ie8.css" rel="stylesheet">
+		<![endif]-->
+		
+		<script src="js/custom.modernizr.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Nostroke : Proyectos" />
+	<body>
+		
+		<!-- Header Content -->
+		<div id="header-container" class="content-width"></div>
+		<script type="text/javascript">$('#header-container').load('modules/header.html');</script>
+		
+		<!-- Home Slider Container -->
+		<div id="home-slider-container">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+			<div id="home-slider">
+				<div class="home-slider-item"><img src="images/slides/1.jpg" alt="Slide 1" /><div class="slider-caption"></div></div>
+				<div class="home-slider-item"><img src="images/slides/2.jpg" alt="Slide 2" /></div>
+				<!-- <div class="home-slider-item"><img src="images/slides/3.jpg" alt="Slide 3" /></div> -->
+			</div>
+			<div id="slider-controller" class="content-width">
+				<a href="#" id="slider-prev"><i class="icon-angle-left"></i></a>
+				<a href="#" id="slider-next"><i class="icon-angle-right"></i></a>
+			</div>
+			<div id="header-image-shadow" class="content-width"></div>
 
-    <title>Ricardo Herrera B.</title>
-  </head>
+		</div>
+		<!-- End id="home-slider-container" -->
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Nostroke/nostroke">View on GitHub</a>
+		<div id="content-container" class="content-width">
 
-          <h1 id="project_title">Ricardo Herrera B.</h1>
-          <h2 id="project_tagline">Proyectos</h2>
+			<!-- Page Intro -->
+			<div id="intro" class="row">
+				<div class="large-12 columns">
+					<h1>Diseño, <strong>Desarrollo</strong> y Sistemas.</h1>
+					<div id="intro-line">
+						<hr class="stick" />
+						<hr />
+					</div>
+					<p>
+						Planteamiento, realización e implementación de soluciones en sistemas locales y de acceso remoto, diseño de interfaces gráficas así como programación de las mismas para su adaptación automática a diversas plataformas y dispositivos.
+					</p>
+				</div>
+			</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Nostroke/nostroke/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Nostroke/nostroke/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+			<!-- Features -->
+			<div class="row">
+				<div class="large-3 columns height-510 no-padding">
+					<img src="images/feat.jpg" alt="" class="stretch-image" />
+				</div>
+				<div class="large-9 columns height-510 bottom-line">
+					<h2 class="has-line">SOLUCIONES DIGITALES.</h2>
+					<h3 class="light larger">Aplicaciones, sistemas, web, CRM, CMS, Blogs, SEO, etc.</h3>
+					<p>
+						Análisis, planeación, diseño, desarrollo, programación e implementación de proyectos para plataformas locales y accesibles desde internet. Diseño de interfaces gráficas, UX Design, arquitectura de información, estructuración, organización, diseño interactivo, “Usability” y accesabilidad.
+					</p>
+					<div class="row top-margin">
+						<div class="large-4 columns less-padding align-center">
+							<h4><i class="icon-eye-open"></i>Diseño.</h4>
+							<p>
+								Creación e implementación en HTML 5, JS o AS3 de esquemas gráficos optimizados para su plataforma destino.
+							</p>
+							<a href="diseno.html" class="flat button">Leer más...</a>
+						</div>
+						<div class="large-4 columns less-padding align-center">
+							<h4><i class="icon-magic"></i>Desarrollo.</h4>
+							<p>
+								Desarrollo de aplicaciones para dispositivos móviles y tabletas, implementación de métricas, sincronización con servidores y distribución.
+							</p>
+							<a href="desarrollo.html" class="flat button">Leer más...</a>
+						</div>
+						<div class="large-4 columns less-padding align-center">
+							<h4><i class="icon-cogs"></i>Sistemas.</h4>
+							<p>
+								Desarrollo de sistemas back y front-end. Implementación de CRM, ajustes y adiciones en sistemas existentes y más.
+							</p>
+							<a href="sistemas.html" class="flat button">Leer más...</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			<!-- Portfolio -->
+			<div class="row top-margin" id="latest_projects">
+				<div class="large-12 columns no-padding">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+					<div class="portfolio-wrapper">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+						<div class="portfolio-item fixed-box">
+							<h2 class="has-line">Proyectos recientes.</h2>
+							<p>
+								Algunos de los proyectos en los que he trabajado recientemente. Para ver los proyectos pasados o los que no fueron actualizados ir a la <a href="http://ricardohb.github.io/Legacy" target="_blank">versión anterior.</a>
+							</p>
+							<a href="desarrollo.html" class="flat button">Proyectos desarrollados...</a>
+						</div>
+	
+						<div class="kitchen mockup portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="proyectos.html">Antara<br>Desarrollo Web</a></h3>
+								<ul>
+									<li>
+										<a href="http://antara.com.mx/" target="_blank">Sitio</a>
+									</li>
+									<li>
+										<a href="proyectos.html">Resumen</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/f1.png" alt="" class="stretch-image" />
+						</div>
+						<div class="furniture interior portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="proyectos.html">Antea<br>Desarrollo Web</a></h3>
+								<ul>
+									<li>
+										<a href="http://www.antea.mx/" target="_blank">Sitio</a>
+									</li>
+									<li>
+										<a href="proyectos.html">Resumen</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/f2.png" alt="" class="stretch-image" />
+						</div>
+	
+						<div class="room interior portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="proyectos.html">Luxury Hall<br>Desarrollo Web</a></h3>
+								<ul>
+									<li>
+										<a href="http://www.luxuryhall.com.mx" target="_blank">Sitio</a>
+									</li>
+									<li>
+										<a href="proyectos.html">Resumen</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/f0.png" alt="" class="stretch-image" />
+						</div>
+						<div class="interior mockup room portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="#">Open-Style &amp; Modern Living Room</a></h3>
+								<ul>
+									<li>
+										<a href="#">Interior</a>
+									</li>
+									<li>
+										<a href="#">Mock-up</a>
+									</li>
+									<li>
+										<a href="#">Room</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/placeholders/255x255.gif" alt="" class="stretch-image" />
+						</div>
+						<div class="interior mockup furniture portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="#">Comfortable Brown Sofa</a></h3>
+								<ul>
+									<li>
+										<a href="#">Furniture</a>
+									</li>
+									<li>
+										<a href="#">Interior</a>
+									</li>
+									<li>
+										<a href="#">Mock-up</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/placeholders/255x255.gif" alt="" class="stretch-image" />
+						</div>
+						<div class="kitchen interior portfolio-item">
+							<div class="portfolio-item-hover">
+								<h3><a href="#">Clean Wooden Kitchen</a></h3>
+								<ul>
+									<li>
+										<a href="#">Interior</a>
+									</li>
+									<li>
+										<a href="#">Kitchen</a>
+									</li>
+								</ul>
+							</div>
+							<img src="images/placeholders/255x255.gif" alt="" class="stretch-image" />
+						</div>
+						
+					</div>
+						
+				</div>
+			</div>
+			
+			<div class="row top-margin" id="personal_info">
+				<div class="large-12 columns">
+					<h2 class="has-line">Información personal y profesional</h2>
+					<div id="cd_photo">
+						<p class="no-margin">
+							<strong>Nombre:</strong> Ricardo Herrera B.<br>
+							<strong>Edad:</strong> 29 años.<br>
+							<strong>Estado civil:</strong> Casado.<br>
+							<strong>Ubicación:</strong> Cd. de México.<br>
+							<strong>Nacionalidad:</strong> Mexicano.
+						</p>
+					</div>
+					
+					<div class="section-container vertical-tabs" data-section="vertical-tabs">
+						<section>
+							<p class="title" data-section-title>
+								<a href="#">Datos profesionales</a>
+							</p>
+							<div class="content" data-section-content>
+								<div class="row">
+									<div class="large-4 columns less-padding">
+										<h3 class="light">Ocupación</h3><p> Diseño y desarrollo de software, aplicaciones y herramientas de marketing interactivo.</p>
+<h3 class="light">Escolaridad</h3><p> Mi formación dentro del ambiente de desarrollo, aunque auto-didacta, no ha sido empírica y si muy bien documentada.</p>
+<h3 class="light">Pretensiones económicas</h3><p> Mis pretensiones económicas dependen de la responsabilidad que conlleve el puesto, con oportunidad de negociarse.</p>
+									</div>
+									<div class="large-4 columns less-padding">
+										<h3 class="light">Experiencia</h3><p> 9½ años. Desarrollo principalmente como profesional independiente, trabajando ocasionalmente en agencias de publicidad, marketing y de desarrollo de software.</p>
+<h3 class="light">Idiomas</h3><p> Español, inglés(Nivel alto; Oral y escrito) y otros.</p>
+<h3 class="light">Disponibilidad para viajar</h3><p> Por proyecto únicamente.</p>
+									</div>
+									<div class="large-4 columns less-padding">
+										<img src="images/cd_dsc.jpg" alt="cd_dsc" width="255" height="411">
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<p class="title" data-section-title>
+								<a href="#">Manejo de lenguajes</a>
+							</p>
+							<div class="content" data-section-content>
+								<div class="row">
+									<div class="large-9 columns less-padding">
+										<table id="cd_languaje_score" style="font-size:12px;" width="90%" border="0" align="center" cellpadding="5" cellspacing="0">
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">Actionscript 2 y 3</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">ASP</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">C++</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">ColdFusion</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">CSS</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">HTML</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">iPhone (Objective C)</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">Java</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">Javascript</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">JQuery</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">LSL (Linden Scripting Languaje)</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">MySQL</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">Perl</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">PHP</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">Python</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">Ruby</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">SQL</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+											</tr>
+											<tr>
+												<td width="50%" align="left" valign="middle">VB.NET</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+											</tr>
+											<tr bgcolor="#EEEEEE">
+												<td width="50%" align="left" valign="middle">Visual Basic</td>
+												<td width="50%" align="center" valign="middle">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+											</tr>
+										</table>
+									</div>
+									<div class="large-3 columns less-padding">
+										<h3>Marcos de trabajo, CMS y CRM</h3>
+										<p>
+											Para detalles en el manejo de marcos de trabajo y plataformas de programación con convenciones revisar la sección Sistemas.
+										</p>
+										<a href="#">Ir a Sistemas... <i class="icon-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<p class="title" data-section-title>
+								<a href="#">Programas</a>
+							</p>
+							<div class="content" data-section-content>
+								<h3>Listado de programas</h3>
+								<p>
+									Adobe Photoshop, Illustrator, InDesign, Dreamweaver, Flash, After Effects, Flash Builder, Bridge, AutoDesk Maya, 3Ds Max. NewTek LighWave 3D, Google Sketchup, Blender, Microsoft Office, Visual Studio, Visual Web Developer Express, Visual C++ Express, Pages, Keynote, Numbers, Xcode, Appcelerator Titanium, NetBeans, Coda.
+								</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="row no-bg" id="contact_info">
+				<div class="large-12 columns no-padding">
+					<iframe style="display:block;margin:60px 0 0 0;" width="1020" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?vpsrc=0&amp;ctz=360&amp;ie=UTF8&amp;msa=0&amp;msid=203267477405074028074.0004b0eed00f4fe29cfc5&amp;t=m&amp;ll=19.397306,-99.158478&amp;spn=0.259068,0.308304&amp;z=11&amp;output=embed"></iframe>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-12 columns bottom-line">
+					<div class="row">
+						<div class="large-5 columns less-padding">
+							<h3>Contacto y redes</h3>
+							<div class="blog-item-list-style-wrapper">
+								<div class="blog-item-list-style-thumbnail-wrapper">
+									<a target="_blank" href='&#109;ai&#108;&#116;o&#58;%72%69cardo&#104;b&#64;&#37;&#54;D&#101;&#46;c&#111;m'><img src="images/cd_email.jpg" alt="cd_email" width="60" height="60"></a>
+								</div>
+								<div class="blog-item-list-style-title-wrapper">
+									<h4 class="blog-item-list-style-title"><a target="_blank" href='&#109;ai&#108;&#116;o&#58;%72%69cardo&#104;b&#64;&#37;&#54;D&#101;&#46;c&#111;m'>&#114;<!-- @. -->&#105;<!-- @. -->&#099;<!-- @. -->&#097;<!-- @. -->&#114;<!-- @. -->&#100;<!-- @. -->&#111;<!-- @. -->&#104;<!-- @. -->&#098;<!-- @. -->&#064;<!-- @. -->&#109;<!-- @. -->&#101;<!-- @. -->&#046;<!-- @. -->&#099;<!-- @. -->&#111;<!-- @. -->&#109;</a></h4>
+									<span class="date">E-Mail</span>
+								</div>
+							</div>
+							<div class="blog-item-list-style-wrapper">
+								<div class="blog-item-list-style-thumbnail-wrapper">
+									<a href="skype:ricardo.h.b?userinfo"><img src="images/cd_skype.jpg" alt="cd_skype" width="60" height="60"></a>
+								</div>
+								<div class="blog-item-list-style-title-wrapper">
+									<h4 class="blog-item-list-style-title"><a href="skype:ricardo.h.b?userinfo">Skype</a></h4>
+									<span class="date">Lunes a viernes de 10:00 a 17:00</span>
+								</div>
+							</div>
+							<div class="blog-item-list-style-wrapper">
+								<div class="blog-item-list-style-thumbnail-wrapper">
+									<a target="_blank" href="http://mx.linkedin.com/pub/ricardo-herrera/8/916/201/"><img src="images/cd_linkedin.jpg" alt="cd_linkedin" width="60" height="60"></a>
+								</div>
+								<div class="blog-item-list-style-title-wrapper">
+									<h4 class="blog-item-list-style-title"><a target="_blank" href="http://mx.linkedin.com/pub/ricardo-herrera/8/916/201/">LinkedIn</a></h4>
+									<span class="date">Perfil, información y conexiones.</span>
+								</div>
+							</div>
+						</div>
+						<div class="large-7 columns less-padding">
+							<h3>&nbsp;</h3>
+							<div class="testimonial-wrapper style2">
+								<div class="testimonial-inner">
+									<div class="testimonial-list">
+										<div>
+											<blockquote>
+												<p>
+													Todos somos muy ignorantes. Lo que ocurre es que no todos ignoramos las mismas cosas 
+												</p>
+												<cite> Albert Einstein </cite>
+											</blockquote>
+										</div>y 
+										<div>
+											<blockquote>
+												<p>
+													La verdad nunca triunfa, simplemente sus oponentes se van muriendo
+												</p>
+												<cite> Max Planck </cite>
+											</blockquote>
+										</div>
+										<div>
+											<blockquote>
+												<p class="smaller">
+													No he encontrado persona tan ignorante que no se pueda aprender algo de ella
+												</p>
+												<cite> Galileo Galilei </cite>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="testimonial-bullets"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		</div>
+		<!-- End id="content-container" -->
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+		<!-- Footer Content -->
+		<div id="footer-content-container"></div>
+		<script type="text/javascript">$('#footer-content-container').load('modules/footer_content.html');</script>
+		
+		<!-- Footer Bar -->
+		<div id="footer-bar-container" class="row"></div>
+		<script type="text/javascript">$('#footer-bar-container').load('modules/footer_bar.html');</script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Nostroke maintained by <a href="https://github.com/Nostroke">Nostroke</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false&v=3.5"></script>
+		<script src="js/jquery.backstretch.min.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/supersubs.js"></script>
+		<script src="js/jquery.hoverIntent.minified.js"></script>
+		<script src="js/jquery.fancybox-1.3.4.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/jquery.touchSwipe.min.js"></script>
+		<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/jquery.hoverdir.js"></script>
+		<script src="js/jquery.validationEngine-en.js"></script>
+		<script src="js/jquery.validationEngine.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script src="js/archtek.js"></script>
+	</body>
 </html>
