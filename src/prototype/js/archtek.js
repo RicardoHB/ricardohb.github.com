@@ -9,7 +9,7 @@
 jQuery(document).ready(function($) {
     /* #DEMO
      ================================================== */
-    $.getScript('demo/demo.js');
+    //$.getScript('demo/demo.js');
     /* END: DEMO */
    
     // ---------------------------------------------- //
@@ -19,8 +19,8 @@ jQuery(document).ready(function($) {
     var showScrollToTopButton = false;
     
     var homeSliderAutoAnimated = true;
-    var homeSliderAutoAnimatedDelay = 8000;
-    var homeSliderAnimation = 'directscroll';
+    var homeSliderAutoAnimatedDelay = 6000;
+    var homeSliderAnimation = 'fade';
     var homeSliderAnimationSpeed = 1000;
     
     var testimonialSliderAutoAnimated = true;

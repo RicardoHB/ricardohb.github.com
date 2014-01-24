@@ -533,12 +533,12 @@ span.sf-sub-indicator {
 
 #slider-prev {
     left: 50%;
-   	margin-left: -510px;
+   	margin-left: -570px;
 }
 
 #slider-next {
     right: 50%;
-    margin-right: -510px;
+    margin-right: -570px;
 }
 
 /***** Header Image *****/
@@ -1158,8 +1158,8 @@ span.sf-sub-indicator {
 }
 
 #footer-bar-container {
-	background: #e0e4cc;
-	color: #000;
+	background: #cdcdcd;
+	color: #383838;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
@@ -1168,11 +1168,16 @@ span.sf-sub-indicator {
 }
 
 #footer-bar-container a {
-    color: #000;
+    color: #383838;
 }
 
 #footer-bar-inner-wrapper {
 	margin: 0 auto;
+}
+
+.footer-bar-small
+{
+	font-size: 11px;
 }
 
 /***** Footer Social Icons *****/
@@ -2952,4 +2957,30 @@ input[type=submit] {
 	}
 	
 	
+}
+
+/* Custom data “cd” prefix */
+
+#cd_photo
+{
+	min-height: 100px;
+	
+	padding-left: 115px;
+	
+	display: inline-block;
+	
+	background-image: url(../images/cd_photo.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+
+#cd_languaje_score
+{
+	border-collapse: collapse;
+}
+
+#cd_languaje_score td
+{
+	padding: 2px 5px;
 }
