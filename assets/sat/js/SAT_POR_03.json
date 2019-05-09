@@ -1,0 +1,26 @@
+{
+	"ejercicio":{
+		"2012":["Tipo de aclaración 2","Tipo de aclaración 3","Tipo de aclaración 4"],
+		"2013":["Tipo de aclaración 1","Tipo de aclaración 3","Tipo de aclaración 4"],
+		"2014":["Tipo de aclaración 1","Tipo de aclaración 2","Tipo de aclaración 4"],
+		"2015":["Tipo de aclaración 1","Tipo de aclaración 2","Tipo de aclaración 3"]
+	},
+	"tipo_aclaracion":{
+		"Tipo de aclaración 1":["Régimen 2","Régimen 3","Régimen 4"],
+		"Tipo de aclaración 2":["Régimen 1","Régimen 3","Régimen 4"],
+		"Tipo de aclaración 3":["Régimen 1","Régimen 2","Régimen 4"],
+		"Tipo de aclaración 4":["Régimen 1","Régimen 2","Régimen 3"]
+	},
+	"regimen":{
+		"Régimen 1":["Periocidad 2","Periocidad 3","Periocidad 4"],
+		"Régimen 2":["Periocidad 1","Periocidad 3","Periocidad 4"],
+		"Régimen 3":["Periocidad 1","Periocidad 2","Periocidad 4"],
+		"Régimen 4":["Periocidad 1","Periocidad 2","Periocidad 3"]
+	},
+	"periocidad":{
+		"Periocidad 1":["Tipo de impuesto 2","Tipo de impuesto 3","Tipo de impuesto 4"],
+		"Periocidad 2":["Tipo de impuesto 1","Tipo de impuesto 3","Tipo de impuesto 4"],
+		"Periocidad 3":["Tipo de impuesto 1","Tipo de impuesto 2","Tipo de impuesto 4"],
+		"Periocidad 4":["Tipo de impuesto 1","Tipo de impuesto 2","Tipo de impuesto 3"]
+	}
+}

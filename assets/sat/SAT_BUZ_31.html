@@ -1,0 +1,662 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_BUZ_31</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/buzon/style.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/media_queries.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/datatables.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/datatables.responsive.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/slider.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/jsp.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/fullcalendar.min.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/datatables.responsive.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/jsp.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body class="buzon">
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li><span>Hora del buzón tributario: 13 de febrero de 2015, 16:39</span></li></ul>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Buzón tributario de <big class="green">Juan Pérez González</big></span>
+				<div id="icons">
+					<a class="tooltip" href="#">T<span>Tooltip T</span></a>
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">R<span>Tooltip R</span></a>
+					<a class="tooltip" href="#">O<span>Tooltip O</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header" style="background-image:url(img/t2mbg.jpg)!important;">
+			<div id="mob_page_title">Buzón tributario <span class="desktop tablet">de</span> <br class="mobile"><big class="green">Juan Pérez González</big></div>
+			<div id="mob_head">
+				<div id="mob_menu" style="z-index:900;">
+					<select id="mob_menu_select" style="display: none;">
+						<option value="#personas">Mis Expedientes</option>
+						<option value="#sección 1">Catálogo de trámites y servicios</option>
+						<option value="#option">&emsp;Inscripción y actualización</option>
+						<option value="#option">&emsp;Presentar Declaración</option>
+						<option value="#option">&emsp;Facturar Electronicamente</option>
+						<option value="#option">&emsp;Créditos fiscales</option>
+						<option value="#option">&emsp;Devoluciones y compensaciones</option>
+						<option value="#option">&emsp;Consultas y servicios</option>
+						<option value="#option">&emsp;Comercio exterior</option>
+						<option value="#sección 2">Autoridades</option>
+						<option value="#option">&emsp;SAT</option>
+						<option value="#option">&emsp;Infonavit</option>
+						<option value="#option">&emsp;IMSS</option>
+						<option value="#option">&emsp;CONAGUA</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">T</a>
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">R</a>
+					<a href="#">O</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="action_bar" class="mobile">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll mobile">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll mobile">
+			<div class="pw">
+				<div class="ab_container" style="white-space:nowrap;">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="action_bar" class="desktop tablet" style="height:90px !important;margin-bottom: 25px;">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll mobile">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll mobile">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#" data_i="0" class="action_button ab_bz"><span class="icon">Q</span><span class="ab_txt">Mis expedientes</span></a>
+					<a href="#" data_i="1" class="action_button ab_bz"><span class="icon">P</span><span class="ab_txt">Catálogo de trámites y servicios</span></a>
+					<a href="#" data_i="2" class="action_button ab_bz"><span class="icon">N</span><span class="ab_txt">Autoridades</span></a>
+				</div>
+			</div>
+			<div class="ab_sub ab_b" id="ab_sub_1">
+				<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+				<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+				<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a><br class="mobile">
+				<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+				<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+				<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+				<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+			</div>
+			<div class="ab_sub ab_b" id="ab_sub_2">
+				<span class=""><img src="img/logo_sat.png"></span>
+				<span class=""><img src="img/logo_infonavit_.png"></span><br class="mobile">
+				<span class=""><img src="img/logo_imss.png"></span>
+				<span class=""><img src="img/logo_conagua.png"></span>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			$('.ab_bz').mouseover(function()
+			{
+				ab_reset();
+				
+				$(this).addClass('ab_active');
+				
+				var n = $(this).attr('data_i');
+				
+				$('#ab_sub_' + n).show();
+			});
+			
+			$('.ab_sub, #action_bar').mouseleave(ab_reset);
+			
+			function ab_reset()
+			{
+				$('.ab_bz').removeClass('ab_active');
+				$('.ab_sub').hide();
+			}
+			
+		</script>
+		
+		<div id="breadcrumbs" class="pw"><span>Inicio</span> > ... > <span>Ofrecimiento de garantías</span> > Ofrecimiento de garantía a través del embargo en la vía administrativa...</div>
+		
+		<div id="content">
+			<div class="pw">
+				<div id="header">
+					<h1>Directorio Nacional de Módulos de Servicios Tributarios</h1>
+					<div class="full">
+						<span class="float_left font_size_18">Buscar oficinas en</span>
+						<span class="float_right font_size_18 margin_right_30">Tipo de atención</span>
+					</div>
+					<div class="clear block margin_bottom_20"></div>
+					<div class="full">
+						<span class="fourth_b float_left">Estado<br><select class="estado full"><option value="1">Distrito Federal</option><option value="2">Coahuila</option><option value="3">Sonora</option></select></span>
+						<span class="fourth_b float_left">Módulo<br><select class="modulo ssm full"><option>Seleccione</option></select></span>
+						<span class="fourth_b float_left">C. Postal<br><input class="full styled_input_text" type="text"/></span>
+						<span class="fourth_b float_right">Tipo de oficinas<br><select class="ssm full"><option>Oficinas SAT</option><option>Oficinas SAT 1</option><option>Oficinas SAT 2</option></select></span>
+					</div>
+					
+					<div class="clear block"></div>
+					
+					<div class="full relative">
+						<a href="#" class="actionButton">Buscar</a>
+					</div>
+					
+					<div class="clear block" style="height:70px;"></div>
+					
+					<a href="#">&lt; Volver</a>
+					
+					<div class="clear separator_b margin_bottom_20"></div>
+				</div>
+				
+				<div id="main" class="oficinas">
+					
+					<div class="data full">
+						<div class="float_left" style="width:38%;">
+							<table id="oficinas" class="sorted responsive" width="100%" cellpadding="5" cellspacing="0">
+								<thead>
+									<tr>
+										<td>Registros 68<span class="float_right font_size_20 pointer t_u" onclick="scrollHandler(false)">&#8743;</span></td>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td><span class="float_right font_size_20 pointer t_d" onclick="scrollHandler(true);">&#8744;</span></td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 1</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3762.4169534933544!2d-99.17686906783256!3d19.437581950225013!3m2!1i1024!2i768!4f13.1!2m1!1ssat!5e0!3m2!1sen!2smx!4v1430937459453</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 2</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.372428038422!2d-99.15563589791567!3d19.39630807228502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941657931</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 3</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.170712187005!2d-99.1100684572239!3d19.40502867180532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941736295</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 1</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3762.4169534933544!2d-99.17686906783256!3d19.437581950225013!3m2!1i1024!2i768!4f13.1!2m1!1ssat!5e0!3m2!1sen!2smx!4v1430937459453</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 2</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.372428038422!2d-99.15563589791567!3d19.39630807228502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941657931</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 3</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.170712187005!2d-99.1100684572239!3d19.40502867180532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941736295</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 1</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3762.4169534933544!2d-99.17686906783256!3d19.437581950225013!3m2!1i1024!2i768!4f13.1!2m1!1ssat!5e0!3m2!1sen!2smx!4v1430937459453</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 2</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.372428038422!2d-99.15563589791567!3d19.39630807228502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941657931</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 3</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.170712187005!2d-99.1100684572239!3d19.40502867180532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941736295</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 1</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3762.4169534933544!2d-99.17686906783256!3d19.437581950225013!3m2!1i1024!2i768!4f13.1!2m1!1ssat!5e0!3m2!1sen!2smx!4v1430937459453</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 2</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.372428038422!2d-99.15563589791567!3d19.39630807228502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941657931</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Chichimeco núm. 119, p.b., entre Av. Héroe de Nacozari Sur y Garabato, col. San Luis, c.p. 20250, Aguascalientes, Aguascalientes.
+											<span class="r_tc">Ver Detalle...</span>
+											<div class="tc">
+												<p class="green"><b>Módulo Los Cabos 3</b></p>
+												<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+												<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+												<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+											</div>
+											<span class="coordinates">https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.170712187005!2d-99.1100684572239!3d19.40502867180532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3796c04cc3%3A0x99b6764bfc670db3!2sServicio+de+Administraci%C3%B3n+Tributaria!5e0!3m2!1sen!2smx!4v1430941736295</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<script type="text/javascript">
+								
+								sb_mt = -280;
+								sb_tt = 0;
+								
+								$(document).ready(SAT_POR_31_init);
+								$(window).resize(setSelect);
+								
+								function SAT_POR_31_init()
+								{
+									$('.ssm').selectmenu();
+									
+									$('.estado').selectmenu({change:estadoHandler});
+									
+									$("#oficinas").DataTable({paging:false,searching:false,info:false,'sScrollY':538,'bSort':false,"sPaginationType": "scrolling",language:{url:'js/datatables.spanish.json'}});
+									
+									$('.r_tc').click(function(e)
+									{
+										var o = $(this);
+										$('.oficina').fadeOut(function()
+										{
+											$('.oficina').html($(o).siblings('.tc').html());
+											$('#map').attr('src',$(o).siblings('.coordinates').text());
+											$('.oficina').fadeIn();
+										});
+										
+									});
+								}
+								
+								function scrollHandler(status)
+								{
+									var n = status ? 120:-120;
+									
+									$('.dataTables_scrollBody').scrollTop($('.dataTables_scrollBody').scrollTop() + n);
+								}
+								
+								function estadoHandler(e,d)
+								{
+									$('.modulo').selectmenu('disable'); 
+									$('.modulo').html('');
+									modulos[d.item.value].forEach(function(e){$('.modulo').append($("<option></option>").attr("value",e).text(e));});
+									$('.modulo').selectmenu('destroy').selectmenu();
+									$('.modulo').selectmenu('enable'); 
+								}
+								
+								function setSelect()
+								{
+									$("select").selectmenu("destroy").selectmenu();
+								}
+							</script>
+						</div>
+						<div class="float_right" style="width:60%;">
+							<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7577778.251759836!2d-98.48494416960447!3d21.969622380508675!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1430848661661" width="100%" height="300" frameborder="0" style="border:0;"></iframe>
+							
+							<p class="font_size_18">Información de la oficina</p>
+							
+							<div class="oficina soberanasans">
+								<p class="green"><b>Módulo Los Cabos</b></p>
+								<p><b>Horario de atención</b><br>Lunes a Jueves de 08:30 a 16:00 hrs.<br>Viernes de 8:30 a 15:00 hrs.</p>
+								<p><b>Teléfonos</b><br>01 800 46 36 728</p>
+								<p><b>Dirección</b><br>Miguel Hidalgo esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Colonia Matamoros<br>C.P. 23470<br>Cabo San Lucas<br>Baja California Sur</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>				<div id="sidebar" class="sb">
+					
+					<div id="action">
+						<div><a href="#"><span>T</span>Favoritos</a></div>
+						<div><a href="#"><span>a</span>Descargar</a></div>
+						<div><a href="#"><span>i</span>Enviar</a></div>
+						<div><a href="#"><span>V</span>Imprimir</a></div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Te ayudamos</h4>
+						<div class="c">
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m1.jpg"></a>
+								<span>Solicita el<br>PIN 24 horas,<br>te explicamos cómo</span>
+							</div>
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m2.jpg"></a>
+								<span>Conoce cómo<br>realizar online tus<br>trámites más<br>frecuentes</span>
+							</div>
+							
+							<div class="clear"></div>
+							
+							<div class="sb_tag">Teléfono: 01 800 INFO SAT (4636-728)</div>
+							
+							<div id="sb_contact_buttons">
+								<a href="#" id="orientacion" class="sb_contact_button">Orientación telefónica</a>
+								<a href="#" id="asistencia" class="sb_contact_button">Asistencia por internet</a>
+								<a href="#" id="chat" class="sb_contact_button">Chat uno a uno</a>
+								<a href="#" id="foro" class="sb_contact_button">Foro de discusión</a>
+								<a href="#" id="ayuda" class="sb_contact_button">Ayuda en línea</a>
+							</div>
+							
+							<map name="phoneMap" id="phoneMap">
+								<area shape="circle" coords="47,42,33" href="#orientacion telefonica" />
+								<area shape="circle" coords="143,43,33" href="#asistencia por internet" />
+								<area shape="circle" coords="237,43,33" href="#chat uno a uno" />
+								<area shape="circle" coords="85,166,33" href="#foro de discusion" />
+								<area shape="circle" coords="193,164,33" href="#ayuda en linea" />
+							</map>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Preguntas frecuentes</h4>
+						<div id="faq" class="c">
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<a href="#" class="more" style="margin-left:8px;">Ver más...</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Unidad responsable</h4>
+						<div id="db_t2" class="c">
+							<p><b>Nombre:</b> Centro Nacional de Consulta (CNC)
+							<br><b>Dirección:</b> Miguel Hidalgo Esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Col. Matamoros, C.P. 23470, Cabo San Lucas, BCS
+							<br><b>Teléfono:</b> 01 800 46 36 728
+							<br><b>Correo electrónico:</b> <a href="mailto:alsc@sat.com.mx">alsc@sat.com.mx</a></p>
+							
+							<div id="ur_select">
+								<select id="ur_estado">
+									<option value="1">Distrito Federal</option>
+									<option value="2">Coahuila</option>
+									<option value="3">Sonora</option>
+								</select>
+								<select id="ur_modulo"></select>
+							</div>
+							<a href="#" class="more">Solicitar cita por internet</a>
+							<a href="#" class="actionButton" style="margin-top:-26px;">Ver oficina</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Contenidos relacionados</h4>
+						<div id="related" class="c">
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 27 del Código Fiscal de la Federación; Artículos 22, 26 del Reglamento del Código Fiscal de la Federación</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 68 de la Ley General de Población, Regla II.2.3.1 de la Resolución Miscelánea Fiscal</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través del embargo vía administrativa de un bien inmueble</a></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través de títulos de valor o cartera de créditos</a></p>
+							<a href="#" class="more" style="margin-left:42px;">Ver más...</a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="links mobile">
+						<span>Portal de Trámites y Servicios
+							<p>
+								<a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Buzón Tributario
+							<p>
+								<a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Enlaces a otros organismos
+							<p>
+								<a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito Público</a>
+							</p>
+						</span>
+						<span>Contacto
+							<p>Av. Hidalgo 77, Col. Guerrero,<br> C.P. 06300 México D.F.</p>
+							<p>Atención telefónica<br>01-800-46-36-728, desde<br>Estados Unidos y Canadá<br>01-877-44-88-728</p>
+						</span>
+					</div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

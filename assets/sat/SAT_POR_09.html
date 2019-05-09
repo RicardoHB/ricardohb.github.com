@@ -1,0 +1,1153 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_POR_09</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/media_queries.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.responsive.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/slider.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/datatables.responsive.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li class="submenu" data-submenu="personas"><a href="#">Personas</a></li><li class="submenu" data-submenu="empresas"><a href="#">Empresas</a></li><li><a href="#">Gobierno</a></li><li data-submenu="morales_sfdl"><a href="#">Morales sin fines de lucro</a></li><li class="menu_active"><a href="#">Futuros contribuyentes</a></li></ul>
+				
+				<div id="dd_container">
+					<select id="dd_menu">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#general">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<div id="submenu">
+					<ul id="personas">
+						<li><a href="#">Asalariados</a></li>
+						<li><a href="#">Empresarios</a></li>
+						<li><a href="#">Profesionales</a></li>
+						<li><a href="#">Arrendatarios</a></li>
+						<li><a href="#">Socios y Accionistas</a></li>
+						<li><a href="#">Sin actividad económica</a></li>
+						<li><a href="#">Régimen de Incorporación Fiscal</a></li>
+					</ul>
+					
+					<ul id="empresas">
+						<li><a href="#">General de Ley</a></li>
+						<li><a href="#">SEC.Fin</a></li>
+						<li><a href="#">Grandes Cuentas</a></li>
+					</ul>
+					
+					<ul id="morales_sfdl">
+						<li><a href="#">Asociaciones civiles</a></li>
+						<li><a href="#">Sociedades civiles</a></li>
+						<li><a href="#">Organizaciones religiosas</a></li>
+						<li><a href="#">Organizaciones políticas</a></li>
+					</ul>
+				</div>
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Portal de trámites y servicios</span>
+				<div id="icons">
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">S<span>Tooltip S</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header">
+			<div id="mob_page_title">Portal de trámites y servicios</div>
+			<div id="mob_head">
+				<div id="mob_menu">
+					<select id="mob_menu_select">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#grandes">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">S</a>
+				</div>
+			</div>
+		</div>
+		<div id="action_bar">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="breadcrumbs" class="pw"><span>Inicio</span> > ... > <span>Ofrecimiento de garantías</span> > Ofrecimiento de garantía a través del embargo en la vía administrativa...</div>
+		
+		<div id="content">
+			<div class="pw">				<div id="header" class="full_width">
+					<h1>Últimas Noticias</h1>
+				</div>
+				
+				<div id="main" class="full_width">
+					
+					<div id="slider" class="slider swipe">
+						<div class='swipe-wrap'></div>
+						<div class="slider_controls"></div>
+					</div>
+					
+					<script type="text/javascript">
+						
+						// JavaScript for Slides -->
+						
+						// slides = Variable donde se incluye la información de los deslizables; URL de la imagen {'url'}, Título {'title'} y descripción corta {'description'}.
+						
+						var slides = [	{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+										{'url':'img/slides/slide_1.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+										{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+										{'url':'img/slides/slide_1.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+										{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'}];
+						
+						$(document).ready(SAT_POR_13_slides_init);
+						
+						$(window).resize(SAT_POR_13_slides_resize);
+						
+						function SAT_POR_13_slides_init()
+						{
+							setSlider();
+						}
+						
+						function SAT_POR_13_slides_resize()
+						{
+							// No resizing js actions, CSS handles resizing.
+						}
+						
+						function swipeHandler(i,e)
+						{
+							$('.slider_controls div').removeClass('sc_active');
+							
+							$('.slider_controls div').promise().done(function()
+							{
+								$('#slider-control-' + i).addClass('sc_active');
+							});
+							
+							$('.slider_text').hide();
+						}
+						
+						function swipeEnd(i,e)
+						{
+							$(e).children('.slider_text').finish().fadeIn('slow');
+						}
+						
+						function setSlider()
+						{
+							var chtml, shtml;
+							
+							$.each(slides,function(i,e)
+							{
+								// Slides
+								shtml = '<div style="background-image:url(' + e.url + ');">';
+								shtml += '<div class="slider_text"><span>' + e.title + '</span>' + e.description + '</div></div>';
+								
+								$('.swipe-wrap').append(shtml);
+								
+								// Bullet pagination
+								chtml = '<div id="slider-control-' + i + '" onclick="wslider.slide(' + i + ',400);" ';
+								chtml += i == 0 ? 'class="sc_active"':'';
+								chtml += '>&#8226;</div>';
+								
+								$('.slider_controls').append(chtml);
+							});
+							
+							window.wslider = $('#slider').Swipe({startSlide:2,callback:swipeHandler,transitionEnd:swipeEnd}).data('Swipe');
+							
+							wslider.slide(0,0);
+						}
+						
+						// <-- JavaScript for Slides
+						
+					</script>
+					
+					<div class="clear margin_top_30"></div>
+					
+					<div class="float_left"><big><span class="green">Registros:</span> 68</big></div>
+					
+					<div class="pagination float_right"></div>
+					
+					<div class="clear margin_bottom_20"></div>
+					
+					<div class="news">
+						<div class="page" id="page-1"> <!-- page 1 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 1 -->
+						
+						<div class="page" id="page-2"> <!-- page 2 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 2</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 2 -->
+						
+						
+						<div class="page" id="page-3"> <!-- page 3 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 3</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 3 -->
+						
+						
+						<div class="page" id="page-4"> <!-- page 4 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 4</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 4 -->
+						
+						<div class="page" id="page-5"> <!-- page 5 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 5</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 5 -->
+						
+						
+						<div class="page" id="page-6"> <!-- page 6 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 6</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/9.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/10.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 6 -->
+						
+						
+						<div class="page" id="page-7"> <!-- page 7 -> -->
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/1.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo 7</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/2.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/3.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/4.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/5.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/6.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/7.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+							<div class="nc">
+								<a href="#">
+									<img src="img/i/8.jpg" width="147" />
+									<div class="txt">
+										<span class="title">Título de la noticia en una o dos líneas de texto cómo máximo</span>
+										<span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo... ></span>
+										<span class="date">dd/mm/aaaa - hh:mm</span>
+									</div>
+								</a>
+							</div>
+						</div> <!-- <- page 7 -->
+						
+					</div>
+					
+					
+					<script type="text/javascript">
+						
+						// Pagination
+						
+						$(document).ready(function()
+						{
+							setPagination();
+							setPage(1);
+						});
+						
+					</script>
+					
+					<div class="clear margin_top_30"></div>
+					
+					<div class="pagination float_right"></div>
+					
+					<div class="clear margin_bottom_20"></div>
+					
+					<div class="collapsible">
+						
+						<h4>Buscar noticias</h4>
+						
+						<div class="c">
+							<span class="third float_left fieldset">
+								<input type="checkbox"> Con el texto 
+								<div>
+									<input type="text" name="keyword" class="three_fourths styled_input_text" placeholder="Buscar con el texto" />
+								</div>
+							</span>
+							<span class="third float_left fieldset">
+								<input type="checkbox"> Publicada 
+								<div>
+									de <input type="text" name="date_from" class="datepicker third styled_input_text" placeholder="dd/mm/aaaa" />
+									<span class="icons font_size_20">D</span> 
+									a <input type="text" name="date_to" class="datepicker third styled_input_text" placeholder="dd/mm/aaaa" />
+									<span class="icons font_size_20">D</span>
+								</div>
+							</span>
+							<span class="third float_left">
+								<a href="#" class="actionButton">Buscar</a>
+							</span>
+						</div>
+						
+						<script>
+							$(document).ready(function()
+							{
+								$(".datepicker").datepicker({changeMonth:true,changeYear:true});
+							});
+						</script>
+						
+					</div>
+					
+				</div>				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="links mobile">
+						<span>Portal de Trámites y Servicios
+							<p>
+								<a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Buzón Tributario
+							<p>
+								<a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Enlaces a otros organismos
+							<p>
+								<a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito Público</a>
+							</p>
+						</span>
+						<span>Contacto
+							<p>Av. Hidalgo 77, Col. Guerrero,<br> C.P. 06300 México D.F.</p>
+							<p>Atención telefónica<br>01-800-46-36-728, desde<br>Estados Unidos y Canadá<br>01-877-44-88-728</p>
+						</span>
+					</div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

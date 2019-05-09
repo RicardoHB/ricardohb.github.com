@@ -1,0 +1,655 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_POR_16</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/media_queries.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.responsive.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/slider.css">
+	<link type="text/css" rel="stylesheet" href="css/fullcalendar.min.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/datatables.responsive.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/es.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li class="submenu" data-submenu="personas"><a href="#">Personas</a></li><li class="submenu" data-submenu="empresas"><a href="#">Empresas</a></li><li><a href="#">Gobierno</a></li><li data-submenu="morales_sfdl"><a href="#">Morales sin fines de lucro</a></li><li class="menu_active"><a href="#">Futuros contribuyentes</a></li></ul>
+				
+				<div id="dd_container">
+					<select id="dd_menu">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#general">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<div id="submenu">
+					<ul id="personas">
+						<li><a href="#">Asalariados</a></li>
+						<li><a href="#">Empresarios</a></li>
+						<li><a href="#">Profesionales</a></li>
+						<li><a href="#">Arrendatarios</a></li>
+						<li><a href="#">Socios y Accionistas</a></li>
+						<li><a href="#">Sin actividad económica</a></li>
+						<li><a href="#">Régimen de Incorporación Fiscal</a></li>
+					</ul>
+					
+					<ul id="empresas">
+						<li><a href="#">General de Ley</a></li>
+						<li><a href="#">SEC.Fin</a></li>
+						<li><a href="#">Grandes Cuentas</a></li>
+					</ul>
+					
+					<ul id="morales_sfdl">
+						<li><a href="#">Asociaciones civiles</a></li>
+						<li><a href="#">Sociedades civiles</a></li>
+						<li><a href="#">Organizaciones religiosas</a></li>
+						<li><a href="#">Organizaciones políticas</a></li>
+					</ul>
+				</div>
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Portal de trámites y servicios</span>
+				<div id="icons">
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">S<span>Tooltip S</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header">
+			<div id="mob_page_title">Portal de trámites y servicios</div>
+			<div id="mob_head">
+				<div id="mob_menu">
+					<select id="mob_menu_select">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#grandes">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">S</a>
+				</div>
+			</div>
+		</div>
+		<div id="action_bar">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="breadcrumbs" class="pw"><span>Inicio</span> > ... > <span>Ofrecimiento de garantías</span> > Ofrecimiento de garantía a través del embargo en la vía administrativa...</div>
+		
+		<div id="content">
+			<div class="pw">				<div id="header">
+					<h1>Ofrecimiento de garantía a través del embargo en la vía administrativa de un inmueble</h1>
+					<p>Ofrece un bien inmueble como garantía y tu crédito fiscal mientras se resuelve tu medio de defensa o bien si lo vas a interponer.</p>
+					<a href="#">&lt; Volver</a>
+				</div>
+				
+				<div id="main">
+					
+					<div class="data two_thirds ">
+						<h3 class="green">¿Quiénes lo presentan?</h3>
+						<p>Personas Físicas y Morales que deseen garantizar el interés fiscal.</p>
+					</div>
+					<div class="data third align_right_desktop">
+						<h3 class="green margin_right_50">Costo</h3>
+						<p>Trámite gratuito.</p>
+					</div>
+					<div class="data full">
+						<h3 class="green">¿Cuándo se presenta?</h3>
+						<p>Dentro de los 30 días siguientes a aquél en que surta efectos la notificación de la resolución de autoridad sobre la cual se deba garantizar el interés fiscal.
+Cuando solicites la suspensión del procedimiento administrativo de ejecución, inclusive si dicha suspensión se solicita ante el tribunal federal de Justicia fiscal y administrativa.
+Cuando solicites el pago a plazos de un crédito fiscal.</p>
+					</div>
+					<div class="data full">
+						<h3 class="green">Fundamento legal</h3>
+						<p>Código Fiscal de la Federación artículo 141 y 142; Reglamento del Código Fiscal de la Federación artículos 87, 88 y 91; Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A.</p>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<a href="#" class="actionButton">Iniciar trámite</a>
+					
+					<div class="tabContainer">
+						<div class="tab_button active" data-tab="#en_linea">En línea</div>
+						<div class="tab_button" data-tab="#presencial">Presencial</div>
+					</div>
+					
+					<ol class="ol tab" id="en_linea">
+						<li><b>Ingresa al buzón</b> tributario iniciando el trámite.</li>
+						<li><b>Ubica tus créditos</b> fiscales a garantizar.</li>
+						<li><b>Captura los datos</b> registrales del bien inmueble y demás datos que se te soliciten.</li>
+						<li><b>Digitaliza los documentos</b> de donde tomaste los datos anteriores.</li>
+						<li><b>Revisa los datos</b> que ingresaste y los documentos que anexaste.</li>
+						<li><b>Firma el trámite</b> con tu FIEL.</li>
+						<li><b>Obtén tu acuse</b> de recibo.</li>
+					</ol>
+					
+					<ol class="ol tab" id="presencial">
+						<li><b>Acude a las oficinas</b> para iniciar el trámite.</li>
+						<li><b>Ubica tus créditos</b> fiscales a garantizar.</li>
+						<li><b>Captura los datos</b> registrales del bien inmueble y demás datos que se te soliciten.</li>
+						<li><b>Digitaliza los documentos</b> de donde tomaste los datos anteriores.</li>
+						<li><b>Revisa los datos</b> que ingresaste y los documentos que anexaste.</li>
+						<li><b>Firma el trámite</b> con tu FIEL.</li>
+						<li><b>Obtén tu acuse</b> de recibo.</li>
+					</ol>
+					
+					<div class="collapsible">
+						<h4>Billete de depósito</h4>
+						<div class="c">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Carta de crédito</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Prenda</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Hipoteca</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Póliza de fianza</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Obligación solidaria asumida por un tercero</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Prenda</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Embargo en la vía administrativa mediante bienes inmuebles</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Embargo en la vía administrativa mediante bienes muebles</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Embargo en la vía administrativa mediante negociación</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Títulos valor</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Cartera de créditos</h4>
+						<div class="c collapsed">
+							<h5>Información adicional</h5>
+							Es un instrumento de pago que se tramita ante el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI) para constituir garantía en efectivo a disposición de autoridades judiciales o administrativas.</b><br><br><a href="#">Artículo 141 fracción I del Código Fiscal de la Federación, artículos 77 y 78 del Reglamento del Código Fiscal de la Federación, Resolución Miscelánea Fiscal para 2015, publicada el 30 de diciembre de 2014, Anexo 1-A, Tabla 32.</a>
+							<h5>Requisitos</h5>
+							<ul>
+								<li>Expedido por el Banco del Ahorro Nacional Servicios Financieros, S.N.C. (BANSEFI), con firma autógrafa del funcionario que lo expide. </li>
+								<li>Estar expedido a favor de la TESOFE o del organismo descentralizado competente para cobrar coactivamente créditos fiscales.</li>
+								<li>Contener el nombre, la denominación o razón social del contribuyente y su R.F.C.</li>
+								<li>Contener número de crédito, resolución determinante y conceptos.</li>
+								<li>Presentar el original ante la Administración Local de Servicios al Contribuyente correspondiente a su domicilio fiscal.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Documentos que obtienes</h4>
+						<ol class="c">
+							<li>Acuse de recepción del trámite.</li>
+							<li>Resolución administrativa en la que conste la aceptación o rechazo de la garantía.</li>
+						</ol>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<div id="bottom">
+						<a href="#" class="back">&lt; Volver</a>
+						<a href="#" class="actionButton">Iniciar trámite</a>
+					</div>
+					
+				</div>				<div id="sidebar" class="sb">
+					
+					<div id="action">
+						<div><a href="#"><span>T</span>Favoritos</a></div>
+						<div><a href="#"><span>a</span>Descargar</a></div>
+						<div><a href="#"><span>i</span>Enviar</a></div>
+						<div><a href="#"><span>V</span>Imprimir</a></div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Te ayudamos</h4>
+						<div class="c">
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m1.jpg"></a>
+								<span>Solicita el<br>PIN 24 horas,<br>te explicamos cómo</span>
+							</div>
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m2.jpg"></a>
+								<span>Conoce cómo<br>realizar online tus<br>trámites más<br>frecuentes</span>
+							</div>
+							
+							<div class="clear"></div>
+							
+							<div class="sb_tag">Teléfono: 01 800 INFO SAT (4636-728)</div>
+							
+							<div id="sb_contact_buttons">
+								<a href="#" id="orientacion" class="sb_contact_button">Orientación telefónica</a>
+								<a href="#" id="asistencia" class="sb_contact_button">Asistencia por internet</a>
+								<a href="#" id="chat" class="sb_contact_button">Chat uno a uno</a>
+								<a href="#" id="foro" class="sb_contact_button">Foro de discusión</a>
+								<a href="#" id="ayuda" class="sb_contact_button">Ayuda en línea</a>
+							</div>
+							
+							<map name="phoneMap" id="phoneMap">
+								<area shape="circle" coords="47,42,33" href="#orientacion telefonica" />
+								<area shape="circle" coords="143,43,33" href="#asistencia por internet" />
+								<area shape="circle" coords="237,43,33" href="#chat uno a uno" />
+								<area shape="circle" coords="85,166,33" href="#foro de discusion" />
+								<area shape="circle" coords="193,164,33" href="#ayuda en linea" />
+							</map>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Preguntas frecuentes</h4>
+						<div id="faq" class="c">
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<a href="#" class="more" style="margin-left:8px;">Ver más...</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Unidad responsable</h4>
+						<div id="db_t2" class="c">
+							<p><b>Nombre:</b> Centro Nacional de Consulta (CNC)
+							<br><b>Dirección:</b> Miguel Hidalgo Esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Col. Matamoros, C.P. 23470, Cabo San Lucas, BCS
+							<br><b>Teléfono:</b> 01 800 46 36 728
+							<br><b>Correo electrónico:</b> <a href="mailto:alsc@sat.com.mx">alsc@sat.com.mx</a></p>
+							
+							<div id="ur_select">
+								<select id="ur_estado">
+									<option value="1">Distrito Federal</option>
+									<option value="2">Coahuila</option>
+									<option value="3">Sonora</option>
+								</select>
+								<select id="ur_modulo"></select>
+							</div>
+							<a href="#" class="more">Solicitar cita por internet</a>
+							<a href="#" class="actionButton" style="margin-top:-26px;">Ver oficina</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Contenidos relacionados</h4>
+						<div id="related" class="c">
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 27 del Código Fiscal de la Federación; Artículos 22, 26 del Reglamento del Código Fiscal de la Federación</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 68 de la Ley General de Población, Regla II.2.3.1 de la Resolución Miscelánea Fiscal</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través del embargo vía administrativa de un bien inmueble</a></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través de títulos de valor o cartera de créditos</a></p>
+							<a href="#" class="more" style="margin-left:42px;">Ver más...</a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="links mobile">
+						<span>Portal de Trámites y Servicios
+							<p>
+								<a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Buzón Tributario
+							<p>
+								<a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Enlaces a otros organismos
+							<p>
+								<a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito Público</a>
+							</p>
+						</span>
+						<span>Contacto
+							<p>Av. Hidalgo 77, Col. Guerrero,<br> C.P. 06300 México D.F.</p>
+							<p>Atención telefónica<br>01-800-46-36-728, desde<br>Estados Unidos y Canadá<br>01-877-44-88-728</p>
+						</span>
+					</div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

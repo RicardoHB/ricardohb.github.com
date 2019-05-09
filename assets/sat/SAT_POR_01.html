@@ -1,0 +1,651 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_POR_01</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/media_queries.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.css">
+	<link type="text/css" rel="stylesheet" href="css/datatables.responsive.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/slider.css">
+	<link type="text/css" rel="stylesheet" href="css/jsp.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/datatables.responsive.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/jsp.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body class="home">
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li class="submenu" data-submenu="personas"><a href="#">Personas</a></li><li class="submenu" data-submenu="empresas"><a href="#">Empresas</a></li><li><a href="#">Gobierno</a></li><li data-submenu="morales_sfdl"><a href="#">Morales sin fines de lucro</a></li><li class="menu_active"><a href="#">Futuros contribuyentes</a></li></ul>
+				
+				<div id="dd_container">
+					<select id="dd_menu">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#general">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<div id="submenu">
+					<ul id="personas">
+						<li><a href="#">Asalariados</a></li>
+						<li><a href="#">Empresarios</a></li>
+						<li><a href="#">Profesionales</a></li>
+						<li><a href="#">Arrendatarios</a></li>
+						<li><a href="#">Socios y Accionistas</a></li>
+						<li><a href="#">Sin actividad económica</a></li>
+						<li><a href="#">Régimen de Incorporación Fiscal</a></li>
+					</ul>
+					
+					<ul id="empresas">
+						<li><a href="#">General de Ley</a></li>
+						<li><a href="#">SEC.Fin</a></li>
+						<li><a href="#">Grandes Cuentas</a></li>
+					</ul>
+					
+					<ul id="morales_sfdl">
+						<li><a href="#">Asociaciones civiles</a></li>
+						<li><a href="#">Sociedades civiles</a></li>
+						<li><a href="#">Organizaciones religiosas</a></li>
+						<li><a href="#">Organizaciones políticas</a></li>
+					</ul>
+				</div>
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Portal de trámites y servicios</span>
+				<div id="icons">
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">S<span>Tooltip S</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header">
+			<div id="mob_page_title">Portal de trámites y servicios</div>
+			<div id="mob_head">
+				<div id="mob_menu">
+					<select id="mob_menu_select">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#grandes">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">S</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="home_action_bar">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="home-header">
+			<div class="pw">
+				<div id="home-tabs-container" class="float_left">
+					<div class="home-tabs-buttons"><span rel="1" class="htb_active home-tabs-button">Lo más visto</span><span rel="2" class="home-tabs-button">Localiza tu trámite</span><span rel="3" class="home-tabs-button">Noticias</span><span rel="4" class="home-tabs-button">Calendario</span></div>
+					<div class="home-tabs">
+						<div id="ht-1" class="home-tab" style="background-image:url(img/ht_t1.png);background-size:cover;">
+							<i>
+								<ul>
+									<li><a href="#">Solicitud de certificados digitales</a></li>
+									<li><a href="#">Verificación de comprobantes</a></li>
+									<li><a href="#">Cita previa</a></li>
+									<li><a href="#">Declaración mensual</a></li>
+									<li><a href="#">Factura electrónica</a></li>
+									<li><a href="#">Renovación de firma electrónica</a></li>
+									<li><a href="#">Chat</a></li>
+								</ul>
+							</i>
+						</div>
+						<div id="ht-2" class="home-tab">
+							<div class="half float_left">
+								<span class="ht2-title">Asalariados</span>
+								<ul>
+									<li><a href="#">Ofrecimiento de garantías para tus créditos fiscales.</a></li>
+									<li><a href="#">Declaración anual de las personas físicas.</a></li>
+									<li><a href="#">Aviso de suspensión/reanudación de actividades de asalariados.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Empresarios</span>
+								<ul>
+									<li><a href="#">Solicitud de certificados de sellos digitales.</a></li>
+									<li><a href="#">Opinión de cumplimiento.</a></li>
+									<li><a href="#">Expedición de factura electrónica.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Arrendadores</span>
+								<ul>
+									<li><a href="#">Ofrecimiento de garantías para tus créditos fiscales.</a></li>
+									<li><a href="#">Declaración anual de las personas físicas.</a></li>
+									<li><a href="#">Aviso de suspensión/reanudación de actividades de asalariados.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Profesionistas</span>
+								<ul>
+									<li><a href="#">Solicitud de certificados de sellos digitales.</a></li>
+									<li><a href="#">Opinión de cumplimiento.</a></li>
+									<li><a href="#">Expedición de factura electrónica.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Socios y Accionistas</span>
+								<ul>
+									<li><a href="#">Ofrecimiento de garantías para tus créditos fiscales.</a></li>
+									<li><a href="#">Declaración anual de las personas físicas.</a></li>
+									<li><a href="#">Aviso de suspensión/reanudación de actividades de asalariados.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Sin actividad económica</span>
+								<ul>
+									<li><a href="#">Solicitud de certificados de sellos digitales.</a></li>
+									<li><a href="#">Opinión de cumplimiento.</a></li>
+									<li><a href="#">Expedición de factura electrónica.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+							<div class="half float_left">
+								<span class="ht2-title">Régimen de incorporación fiscal</span>
+								<ul>
+									<li><a href="#">Solicitud de certificados de sellos digitales.</a></li>
+									<li><a href="#">Opinión de cumplimiento.</a></li>
+									<li><a href="#">Expedición de factura electrónica.</a></li>
+									<li><a href="#">Ver más...</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="ht-3" class="home-tab">
+							<div id="slider" class="slider swipe">
+								<div class='swipe-wrap'></div>
+								<div class="slider_controls"></div>
+							</div>
+						</div>
+						<div id="ht-4" class="home-tab">
+							<div class="ht4-date third float_left">
+								<span class="title">Cita</span>
+								<span class="subtitle">Pagos provisionales y definitivos</span>
+								<span class="description">Pago provisional o definitivo de ISR, IVA, IEPS y entero de retenciones, en su caso. Con el servicio de declaraciones y pagos.</span>
+								<span class="date">17, 18 y 19 de noviembre</span>
+								<span class="address">Lugar del evento</span>
+							</div>
+							<div class="ht4-separator"></div>
+							<div class="ht4-date third float_left">
+								<span class="title">Evento SAP</span>
+								<span class="subtitle">Nombre del evento</span>
+								<span class="description">Descripción del evento: Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</span>
+								<span class="date">20/01/2016 - 20/01/2016</span>
+								<span class="address">Lugar del evento</span>
+							</div>
+							<div class="ht4-separator"></div>
+							<div class="ht4-date third float_left">
+								<span class="title">Festivo Nacional</span>
+								<span class="subtitle">Nombre del evento</span>
+								<span class="description">Descripción del evento: Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</span>
+								<span class="date">20/01/2016</span>
+								<span class="address">Lugar del evento</span>
+							</div>
+							<span class="ht4-more"><a href="#">más eventos ></a></span>
+						</div>
+					</div>
+				</div>
+				
+				<div id=""></div>
+			</div>
+			<div id="home-box-container" class="float_left">
+				<span class="title">Buzón tributario</span>
+				<div class="box-container">
+					<a href="#"><div class="box" style="background-image:url(img/box-b1.png);">mis<br>trámites</div></a>
+					<a href="#"><div class="box" style="background-image:url(img/box-b2.png);">mis<br>tareas</div></a> 
+					<a href="#"><div class="box" style="background-image:url(img/box-b3.png);">mis<br>notificaciones</div></a>
+					<a href="#"><div class="box" style="background-image:url(img/box-b1.png);">mis<br>comunicados</div></a>
+				</div>
+				<div class="box-login">
+					<form method="post">
+						<input type="text" placeholder="RFC"/><input type="password" placeholder="Contraseña" /><input type="submit" value="IR" />
+					</form>
+				</div>
+				<a href="#"><small>Ingresa con FIEL</small></a>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript">
+			
+			var slides = [	{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+							{'url':'img/slides/slide_1.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+							{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+							{'url':'img/slides/slide_1.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'},
+							{'url':'img/slides/slide_2.png','title':'Factura Electrónica','description':'Único esquema válido de comprobación fiscal.'}];
+			
+			$(document).ready(SAT_POR_01_init);
+			$(window).resize(SAT_POR_01_resize);
+			
+			function SAT_POR_01_init()
+			{
+				$('.home-tabs-button').click(htbHandler);
+				
+				$('#ht-2, #ht-4').jScrollPane({autoReinitialise:true});
+				
+				ht2_fix();
+				
+				setSlider();
+				
+				$('.gate').mouseover(setDesktopGates);
+				$('.gate').mouseleave(setDesktopGates);
+				
+				desktopGatesHeight();
+			}
+			
+			function SAT_POR_01_resize()
+			{
+				setSlider();
+				
+				desktopGatesHeight();
+				
+				ht2_fix();
+			}
+			
+			function htbHandler(e)
+			{
+				$('.home-tabs-button').removeClass('htb_active');
+				
+				$(this).addClass('htb_active');
+				
+				var t = '#ht-' + $(this).attr('rel');
+				
+				$('.home-tab').hide();
+				$(t).show();
+			}
+			
+			function ht2_fix()
+			{
+				var h;
+				var mh = 0;
+				
+				$('#ht-2 ul').each(function(i,e)
+				{
+					h = $(this).innerHeight();
+					
+					mh = h > mh ? h:mh;
+				});
+				
+				$('#ht-2 ul').height(mh)
+			}
+			
+			function swipeHandler(i,e)
+			{
+				$('.slider_controls div').removeClass('sc_active');
+				
+				$('.slider_controls div').promise().done(function()
+				{
+					$('#slider-control-' + i).addClass('sc_active');
+				});
+				
+				$('.slider_text').hide();
+			}
+			
+			function swipeEnd(i,e)
+			{
+				$(e).children('.slider_text').finish().fadeIn('slow');
+			}
+			
+			function setSlider()
+			{
+				var chtml, shtml;
+				
+				if(typeof(wslider) != 'undefined'){wslider.kill();}
+				
+				$('.swipe-wrap, .slider_controls').html('');
+				
+				$.each(slides,function(i,e)
+				{
+					// Slides
+					shtml = '<div style="background-image:url(' + e.url + ');">';
+					shtml += '<div class="slider_text"><span>' + e.title + '</span>' + e.description + '</div></div>';
+					
+					$('.swipe-wrap').append(shtml);
+					
+					// Bullet pagination
+					chtml = '<div id="slider-control-' + i + '" onclick="wslider.slide(' + i + ',400);" ';
+					chtml += i == 0 ? 'class="sc_active"':'';
+					chtml += '>&#8226;</div>';
+					
+					$('.slider_controls').append(chtml);
+				});
+				
+				window.wslider = $('#slider').Swipe({startSlide:2,callback:swipeHandler,transitionEnd:swipeEnd}).data('Swipe');
+				
+				wslider.slide(0,0);
+			}
+			
+			function setDesktopGates(e)
+			{
+				if(e.type == 'mouseover')
+				{
+					$(this).children('.gate_data').slideDown();
+				}
+				else
+				{
+					$(this).children('.gate_data').slideUp();
+				}
+			}
+			
+			function desktopGatesHeight()
+			{
+				$('#home-gates-1 .gate').each(function(i,e)
+				{
+					$(this).children('.gate_data').height($(this).height() - $(this).children('span').outerHeight());
+				});
+			}
+			
+		</script>
+		
+		<div id="action_bar">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear margin_bottom_10"></div>
+		
+		<div id="content">
+			<div class="pw">
+				<div id="main" class="full_width">
+					
+					<div id="home-gates-1">
+						<div id="gate-1" class="gate">
+							<div class="gate_data">
+								<ul>
+									<li>Encuentra los bienes que son objeto de remate.</li>
+									<li>Participa en subastas de bienes embargados por la Administración General de Recaudación.</li>
+								</ul>
+							</div>
+							<span><a href="#">Subasta SAT</a></span>
+						</div>
+						<div id="gate-2" class="gate">
+							<div class="gate_data">
+								<p>Personaliza</p>
+								<ul>
+									<li>Tu Facturación.</li>
+									<li>Tu Contabilidad.</li>
+									<li>Tus Declaraciones</li>
+								</ul>
+							</div>
+							<span><a href="#">Mis cuentas</a></span>
+						</div>
+						<div id="gate-3" class="gate">
+							<div class="gate_data">
+								<ul>
+									<li><a href="#">Quejas</a></li>
+									<li><a href="#">Denuncias</a></li>
+									<li><a href="#">Sugerencias</a></li>
+									<li><a href="#">Recurso de revocación en línea</a></li>
+								</ul>
+								<p>Ahora todos tus derechos como contribuyente están plasmados en la (61 KB) Ley Federal de Derechos del Contribuyente, <b>publicada en el DOF el 23 de junio de 2005.</b></p>
+							</div>
+							<span><a href="#">Derechos de los contribuyentes</a></span>
+						</div>
+						<div id="gate-4" class="gate">
+							<div class="gate_data">
+								<ul>
+									<li>Recibe un servicio más ágil.</li>
+									<li>Evita tiempos de espera.</li>
+									<li>Evita filas innecesarias.</li>
+									<li>Asegura la atención del servicio requerido.</li>
+								</ul>
+							</div>
+							<span><a href="#">Citas</a></span>
+						</div>
+						<div id="gate-5" class="gate">
+							<div class="gate_data">
+								<ul>
+									<li>La Factura Electrónica es el único esquema válido de comprobación fiscal.</li>
+								</ul>
+							</div>
+							<span><a href="#">Factura electrónica</a></span>
+						</div>
+					</div>
+					
+					<div id="home-gates-2">
+						<div class="gate">
+							<span>Subasta SAT</span>
+							<div id="gate-1"></div>
+							<ul>
+								<li>Encuentra los bienes que son objeto de remate.</li>
+								<li>Participa en subastas de bienes embargados por la Administración General de Recaudación.</li>
+							</ul>
+						</div>
+						<div class="gate">
+							<span>Citas SAT</span>
+							<div id="gate-4"></div>
+							<ul>
+								<li>Recibe un servicio más ágil.</li>
+								<li>Evita tiempos de espera.</li>
+								<li>Evita filas innecesarias.</li>
+								<li>Asegura la atención del servicio requerido.</li>
+							</ul>
+						</div>
+						<div class="gate">
+							<span>Mis cuentas</span>
+							<div id="gate-2"></div>
+							<p>Personaliza</p>
+							<ul>
+								<li>Tu Facturación.</li>
+								<li>Tu Contabilidad.</li>
+								<li>Tus Declaraciones</li>
+							</ul>
+						</div>
+						<div class="gate">
+							<span>Factura electrónica</span>
+							<div id="gate-5"></div>
+							<ul>
+								<li>La Factura Electrónica es el único esquema válido de comprobación fiscal.</li>
+							</ul>
+						</div>
+						<div class="gate">
+							<span>Derechos de los contribuyentes</span>
+							<div id="gate-3"></div>
+							<ul>
+								<li><a href="#">Quejas</a></li>
+								<li><a href="#">Denuncias</a></li>
+								<li><a href="#">Sugerencias</a></li>
+								<li><a href="#">Recurso de revocación en línea</a></li>
+							</ul>
+							<p>Ahora todos tus derechos como contribuyente están plasmados en la (61 KB) Ley Federal de Derechos del Contribuyente, <b>publicada en el DOF el 23 de junio de 2005.</b></p>
+						</div>
+					</div>
+					
+				</div>				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

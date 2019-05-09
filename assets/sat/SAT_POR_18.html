@@ -1,0 +1,534 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_POR_18</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/media_queries.css">
+	
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li class="submenu" data-submenu="personas"><a href="#">Personas</a></li><li class="submenu" data-submenu="empresas"><a href="#">Empresas</a></li><li><a href="#">Gobierno</a></li><li data-submenu="morales_sfdl"><a href="#">Morales sin fines de lucro</a></li><li class="menu_active"><a href="#">Futuros contribuyentes</a></li></ul>
+				
+				<div id="dd_container">
+					<select id="dd_menu">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#general">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<div id="submenu">
+					<ul id="personas">
+						<li><a href="#">Asalariados</a></li>
+						<li><a href="#">Empresarios</a></li>
+						<li><a href="#">Profesionales</a></li>
+						<li><a href="#">Arrendatarios</a></li>
+						<li><a href="#">Socios y Accionistas</a></li>
+						<li><a href="#">Sin actividad económica</a></li>
+						<li><a href="#">Régimen de Incorporación Fiscal</a></li>
+					</ul>
+					
+					<ul id="empresas">
+						<li><a href="#">General de Ley</a></li>
+						<li><a href="#">SEC.Fin</a></li>
+						<li><a href="#">Grandes Cuentas</a></li>
+					</ul>
+					
+					<ul id="morales_sfdl">
+						<li><a href="#">Asociaciones civiles</a></li>
+						<li><a href="#">Sociedades civiles</a></li>
+						<li><a href="#">Organizaciones religiosas</a></li>
+						<li><a href="#">Organizaciones políticas</a></li>
+					</ul>
+				</div>
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Portal de trámites y servicios</span>
+				<div id="icons">
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">S<span>Tooltip S</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header">
+			<div id="mob_page_title">Portal de trámites y servicios</div>
+			<div id="mob_head">
+				<div id="mob_menu">
+					<select id="mob_menu_select">
+						<option value="#personas">Personas</option>
+						<option value="#asalariados">&emsp;Asalariados</option>
+						<option value="#empresarios">&emsp;Empresarios</option>
+						<option value="#profesionales">&emsp;Profesionales</option>
+						<option value="#arrendatarios">&emsp;Arrendatarios</option>
+						<option value="#arrendatarios">&emsp;Socios y Accionistas</option>
+						<option value="#arrendatarios">&emsp;Sin actividad económica</option>
+						<option value="#arrendatarios">&emsp;Régimen de Incorporación Fiscal</option>
+						<option value="#empresas">Empresas</option>
+						<option value="#general">&emsp;General de Ley</option>
+						<option value="#grandes">&emsp;SEC.Fin</option>
+						<option value="#grandes">&emsp;Grandes Cuentas</option>
+						<option value="#gobierno">Gobierno</option>
+						<option value="#morales">Morales sin fines de lucro</option>
+						<option value="#grandes">&emsp;Asociaciones civiles</option>
+						<option value="#grandes">&emsp;Sociedades civiles</option>
+						<option value="#grandes">&emsp;Organizaciones religiosas</option>
+						<option value="#grandes">&emsp;Organizaciones políticas</option>
+						<option value="#futuros">Futuros contribuyentes</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">S</a>
+				</div>
+			</div>
+		</div>
+		<div id="action_bar">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="active" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="breadcrumbs" class="pw"><span>Inicio</span> > ... > <span>Ofrecimiento de garantías</span> > Ofrecimiento de garantía a través del embargo en la vía administrativa...</div>
+		
+		<div id="content">
+			<div class="pw">				<div id="header">
+					<h1>Información anual de sueldos, salarios, conceptos asignados y crédito al salario</h1>
+					
+					<p class="float_right">Ejercicio: <span class="green">2015</span></p>
+					<p class="float_right" style="margin-right: 20px;">Declaración: <span class="green">Informativa</span></p>
+					
+					<div class="clear"></div>
+					
+					<p>Esta declaración permite a las entidades financieras y sociedades cooperativas de ahorro y préstamo cumplir con su obligación de informar a la autoridad información de cuentas, los depósitos, servicios, fideicomisos, créditos o préstamos otorgados a personas físicas y morales, o cualquier tipo de operaciones.</p>
+					<a href="#">&lt; Volver</a>
+				</div>
+				
+				<div id="main">
+					
+					<div class="data third">
+						<h3 class="green">¿Quiénes lo presentan?</h3>
+						<p>Las entidades financieras y sociedades cooperativas de ahorro y préstamo.</p>
+					</div>
+					<div class="data third">
+						<h3 class="green">Día de cumplimiento</h3>
+						<p>Descripción del día de cumplimiento.</p>
+					</div>
+					<div class="data third">
+						<h3 class="green">Periocidad</h3>
+						<p>Descripción de la periodicidad.</p>
+					</div>
+					<div class="data full">
+						<h3 class="green">Obligación a cumplir</h3>
+						<p>Presentar información de las cuentas, los depósitos, servicios, fideicomisos, créditos o préstamos otorgados a personas físicas y morales, o cualquier tipo de operaciones, para efectos del cobro de créditos fiscales firmes o del procedimiento administrativo de ejecución.</p>
+					</div>
+					<div class="data full">
+						<h3 class="green">Objetivo</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="data third">
+						<h3 class="green">Fundamento legal</h3>
+						<p>Artículo 32-B, fracción IV del CFF. Regla I.2.15.8. de la RMF 2014.</p>
+					</div>
+					<div class="data two_thirds">
+						<h3 class="green">Aplicaciones relacionadas</h3>
+						<p>Nombre de la app</p>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<a href="#" class="actionButton">Iniciar trámite</a>
+					
+					<div class="tabContainer">
+						<div class="tab_button active" data-tab="#en_linea">En línea</div>
+						<div class="tab_button" data-tab="#fuera">Fuera de línea</div>
+						<div class="tab_button" data-tab="#formato">Formato</div>
+					</div>
+					
+					<div id="en_linea" class="tab" style="width:100%;position:relative;">
+						<ol class="ol two_thirds">
+							<li><b>Ingresa al buzón</b> tributario iniciando el trámite.</li>
+							<li><b>Ubica tus créditos</b> fiscales a garantizar.</li>
+							<li><b>Captura los datos</b> registrales del bien inmueble y demás datos que se te soliciten.</li>
+							<li><b>Digitaliza los documentos</b> de donde tomaste los datos anteriores.</li>
+							<li><b>Revisa los datos</b> que ingresaste y los documentos que anexaste.</li>
+							<li><b>Firma el trámite</b> con tu FIEL.</li>
+							<li><b>Obtén tu acuse</b> de recibo.</li>
+						</ol>
+						<div class="third desktop" style="position:absolute;right:0;top:165px;">
+							<h3 class="black font_size_14">Ingresa con:</h3>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+						<div class="clear tablet mobile margin_left_10">
+							<p class="black font_size_14">Ingresa con:</p>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+					</div>
+					
+					<div id="fuera" class="tab" style="width:100%;position:relative;">
+						<ol class="ol two_thirds">
+							<li><b>Acude a las oficinas</b> para iniciar el trámite.</li>
+							<li><b>Ubica tus créditos</b> fiscales a garantizar.</li>
+							<li><b>Captura los datos</b> registrales del bien inmueble y demás datos que se te soliciten.</li>
+							<li><b>Digitaliza los documentos</b> de donde tomaste los datos anteriores.</li>
+							<li><b>Revisa los datos</b> que ingresaste y los documentos que anexaste.</li>
+							<li><b>Firma el trámite</b> con tu FIEL.</li>
+							<li><b>Obtén tu acuse</b> de recibo.</li>
+						</ol>
+						<div class="third desktop" style="position:absolute;right:0;top:165px;">
+							<h3 class="black font_size_14">Ingresa con:</h3>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+						<div class="clear tablet mobile margin_left_10">
+							<p class="black font_size_14">Ingresa con:</p>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+					</div>
+					
+					<div id="formato" class="tab" style="width:100%;position:relative;">
+						<ol class="ol two_thirds">
+							<li><b>Llena el formato</b> para iniciar el trámite.</li>
+							<li><b>Ubica tus créditos</b> fiscales a garantizar.</li>
+							<li><b>Captura los datos</b> registrales del bien inmueble y demás datos que se te soliciten.</li>
+							<li><b>Digitaliza los documentos</b> de donde tomaste los datos anteriores.</li>
+							<li><b>Revisa los datos</b> que ingresaste y los documentos que anexaste.</li>
+							<li><b>Firma el trámite</b> con tu FIEL.</li>
+							<li><b>Obtén tu acuse</b> de recibo.</li>
+						</ol>
+						<div class="third desktop" style="position:absolute;right:0;top:165px;">
+							<h3 class="black font_size_14">Ingresa con:</h3>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+						<div class="clear tablet mobile margin_left_10">
+							<p class="black font_size_14">Ingresa con:</p>
+							<p><span class="data_icon">X</span> <a href="#">FIEL</a></p>
+							<p><span class="data_icon">X</span> <span class="in_block"><a href="#">RFC<br>Contraseña</a></span></p>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Información adicional</h4>
+						<p class="c"><b>Considera que el valor del inmueble deberá ser suficiente</b> para cubrir el importe actualizado de los créditos, incluyendo todos sus accesorios, más los que se causen en los <b>doce meses siguientes</b> a su otorgamiento. En caso contrario la garantía ofrecida quedará como insuficiente. El importe de la garantía deberá de actualizarse cada año y ampliarse <b>para que cubra el crédito actualizado y el importe de los recargos.</b><br><br><a href="#">Fundamento legal: Ley Orgánica de la Administración Pública Federal: Artículos 16 y 31.</a></p>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Requisitos</h4>
+						<ul class="c collapsed">
+							<li>Escrito libre donde se ofrezca la garantía</li>
+							<li>Escritura pública del bien inmueble</li>
+							<li>Avalúo con antigüedad menor a seis meses emitido por INDAABIN o por corredor público.</li>
+							<li>Identificación oficial</li>
+							<li>Poder notarial en caso de persona moral para acreditar la representación legal</li>
+						</ul>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Documentos que obtienes</h4>
+						<ol class="c collapsed">
+							<li>Acuse de recepción del trámite.</li>
+							<li>Resolución administrativa en la que conste la aceptación de la garantía.</li>
+						</ol>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<div id="bottom">
+						<a href="#" class="back">&lt; Volver</a>
+						<a href="#" class="actionButton">Iniciar trámite</a>
+					</div>
+					
+				</div>
+				<script>sb_mt = '-233px';</script>				<div id="sidebar" class="sb">
+					
+					<div id="action">
+						<div><a href="#"><span>T</span>Favoritos</a></div>
+						<div><a href="#"><span>a</span>Descargar</a></div>
+						<div><a href="#"><span>i</span>Enviar</a></div>
+						<div><a href="#"><span>V</span>Imprimir</a></div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Te ayudamos</h4>
+						<div class="c">
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m1.jpg"></a>
+								<span>Solicita el<br>PIN 24 horas,<br>te explicamos cómo</span>
+							</div>
+							<div class="sb_media">
+								<a href="#"><img src="img/sb_m2.jpg"></a>
+								<span>Conoce cómo<br>realizar online tus<br>trámites más<br>frecuentes</span>
+							</div>
+							
+							<div class="clear"></div>
+							
+							<div class="sb_tag">Teléfono: 01 800 INFO SAT (4636-728)</div>
+							
+							<div id="sb_contact_buttons">
+								<a href="#" id="orientacion" class="sb_contact_button">Orientación telefónica</a>
+								<a href="#" id="asistencia" class="sb_contact_button">Asistencia por internet</a>
+								<a href="#" id="chat" class="sb_contact_button">Chat uno a uno</a>
+								<a href="#" id="foro" class="sb_contact_button">Foro de discusión</a>
+								<a href="#" id="ayuda" class="sb_contact_button">Ayuda en línea</a>
+							</div>
+							
+							<map name="phoneMap" id="phoneMap">
+								<area shape="circle" coords="47,42,33" href="#orientacion telefonica" />
+								<area shape="circle" coords="143,43,33" href="#asistencia por internet" />
+								<area shape="circle" coords="237,43,33" href="#chat uno a uno" />
+								<area shape="circle" coords="85,166,33" href="#foro de discusion" />
+								<area shape="circle" coords="193,164,33" href="#ayuda en linea" />
+							</map>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Preguntas frecuentes</h4>
+						<div id="faq" class="c">
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<p><a href="#"><b>Texto de la pregunta en una o dos líneas de texto</b><br>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet...</a></p>
+							<a href="#" class="more" style="margin-left:8px;">Ver más...</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Unidad responsable</h4>
+						<div id="db_t2" class="c">
+							<p><b>Nombre:</b> Centro Nacional de Consulta (CNC)
+							<br><b>Dirección:</b> Miguel Hidalgo Esquina López Mateos, Manzana 168, Lotes 7, 8 y 9, Col. Matamoros, C.P. 23470, Cabo San Lucas, BCS
+							<br><b>Teléfono:</b> 01 800 46 36 728
+							<br><b>Correo electrónico:</b> <a href="mailto:alsc@sat.com.mx">alsc@sat.com.mx</a></p>
+							
+							<div id="ur_select">
+								<select id="ur_estado">
+									<option value="1">Distrito Federal</option>
+									<option value="2">Coahuila</option>
+									<option value="3">Sonora</option>
+								</select>
+								<select id="ur_modulo"></select>
+							</div>
+							<a href="#" class="more">Solicitar cita por internet</a>
+							<a href="#" class="actionButton" style="margin-top:-26px;">Ver oficina</a>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						<h4>Contenidos relacionados</h4>
+						<div id="related" class="c">
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 27 del Código Fiscal de la Federación; Artículos 22, 26 del Reglamento del Código Fiscal de la Federación</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">q</span><a href="#">Artículo 68 de la Ley General de Población, Regla II.2.3.1 de la Resolución Miscelánea Fiscal</a> <span class="file_size">(2.14 MB)</span></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través del embargo vía administrativa de un bien inmueble</a></p>
+							<p><span class="rel_icon icons">r</span><a href="#">Ofrecimiento de garantía a través de títulos de valor o cartera de créditos</a></p>
+							<a href="#" class="more" style="margin-left:42px;">Ver más...</a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="links mobile">
+						<span>Portal de Trámites y Servicios
+							<p>
+								<a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Buzón Tributario
+							<p>
+								<a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Enlaces a otros organismos
+							<p>
+								<a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito Público</a>
+							</p>
+						</span>
+						<span>Contacto
+							<p>Av. Hidalgo 77, Col. Guerrero,<br> C.P. 06300 México D.F.</p>
+							<p>Atención telefónica<br>01-800-46-36-728, desde<br>Estados Unidos y Canadá<br>01-877-44-88-728</p>
+						</span>
+					</div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

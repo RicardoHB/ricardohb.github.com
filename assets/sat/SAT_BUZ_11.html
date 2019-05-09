@@ -1,0 +1,440 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>SAT_BUZ_11</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta name="description" content="Test front">
+	<meta name="author" content="RicardoHB - SCI">
+	
+	<link type="text/css" rel="stylesheet" href="css/buzon/style.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/sidebar.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/media_queries.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/datatables.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/datatables.responsive.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/slider.css">
+	<link type="text/css" rel="stylesheet" href="css/buzon/jsp.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/datatables.responsive.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/jsp.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body class="buzon">
+	<div id="wrapper">
+		
+		<div id="top_bar">
+			<div class="pw">
+				
+				<ul id="menu"><li><span>Hora del buzón tributario: 13 de febrero de 2015, 16:39</span></li></ul>
+				
+				<div id="srch">
+					<form action="#" method="post">
+						<input type="text" id="top_search" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				
+				<div id="lang">
+					<a class="trigger" href="#">Español &#x025BE;</a>
+					<ul>
+						<li><a href="#">Idioma 1</a></li>
+						<li><a href="#">Idioma 2</a></li>
+						<li><a href="#">Idioma 3</a></li>
+						<li><a href="#">Idioma 4</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="logo_bar">
+			<div class="pw">
+				
+				<img alt="" src="img/logo.png" width="309" height="42" id="logo">
+				<span id="page_title">Buzón tributario de <big class="green">Juan Pérez González</big></span>
+				<div id="icons">
+					<a class="tooltip" href="#">T<span>Tooltip T</span></a>
+					<a class="tooltip" href="#">E<span>Tooltip E</span></a>
+					<a class="tooltip" href="#">D<span>Tooltip D</span></a>
+					<a class="tooltip" href="#">B<span>Tooltip B</span></a>
+					<a class="tooltip" href="#">U<span>Tooltip U</span></a>
+					<a class="tooltip" href="#">C<span>Tooltip C</span></a>
+					<a class="tooltip" href="#">A<span>Tooltip A</span></a>
+					<a class="tooltip" href="#">R<span>Tooltip R</span></a>
+					<a class="tooltip" href="#">O<span>Tooltip O</span></a>
+				</div>
+			</div>
+		</div>
+		<div id="mobile_header" style="background-image:url(img/t2mbg.jpg)!important;">
+			<div id="mob_page_title">Buzón tributario <span class="desktop tablet">de</span> <br class="mobile"><big class="green">Juan Pérez González</big></div>
+			<div id="mob_head">
+				<div id="mob_menu" style="z-index:900;">
+					<select id="mob_menu_select" style="display: none;">
+						<option value="#personas">Mis Expedientes</option>
+						<option value="#sección 1">Catálogo de trámites y servicios</option>
+						<option value="#option">&emsp;Inscripción y actualización</option>
+						<option value="#option">&emsp;Presentar Declaración</option>
+						<option value="#option">&emsp;Facturar Electronicamente</option>
+						<option value="#option">&emsp;Créditos fiscales</option>
+						<option value="#option">&emsp;Devoluciones y compensaciones</option>
+						<option value="#option">&emsp;Consultas y servicios</option>
+						<option value="#option">&emsp;Comercio exterior</option>
+						<option value="#sección 2">Autoridades</option>
+						<option value="#option">&emsp;SAT</option>
+						<option value="#option">&emsp;Infonavit</option>
+						<option value="#option">&emsp;IMSS</option>
+						<option value="#option">&emsp;CONAGUA</option>
+					</select>
+				</div>
+				<div id="mob_search">
+					<form action="#" method="post">
+						<input type="text" id="mob_search_input" name="search" placeholder="Buscar">
+						<input type="image" src="img/menu_search.png" alt="Buscar" />
+					</form>
+				</div>
+				<div id="mob_icons">
+					<a href="#">T</a>
+					<a href="#">E</a>
+					<a href="#">D</a>
+					<a href="#">B</a>
+					<a href="#">U</a>
+					<a href="#">C</a>
+					<a href="#">A</a>
+					<a href="#">R</a>
+					<a href="#">O</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="action_bar" class="mobile">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll mobile">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll mobile">
+			<div class="pw">
+				<div class="ab_container" style="white-space:nowrap;">
+					<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+					<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+					<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a>
+					<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+					<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+					<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+					<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="action_bar" class="desktop tablet" style="height:90px !important;">
+			<img alt="" src="img/ab_sr.png" id="ab_sr" class="ab_scroll mobile">
+			<img alt="" src="img/ab_sl.png" id="ab_sl" class="ab_scroll mobile">
+			<div class="pw">
+				<div class="ab_container">
+					<a href="#" data_i="0" class="action_button ab_bz"><span class="icon">Q</span><span class="ab_txt">Mis expedientes</span></a>
+					<a href="#" data_i="1" class="action_button ab_bz"><span class="icon">P</span><span class="ab_txt">Catálogo de trámites y servicios</span></a>
+					<a href="#" data_i="2" class="action_button ab_bz"><span class="icon">N</span><span class="ab_txt">Autoridades</span></a>
+				</div>
+			</div>
+			<div class="ab_sub ab_b" id="ab_sub_1">
+				<a href="#inscripcion y actualizacion" class="action_button"><span class="icon">M</span><span class="ab_txt">Inscripción y<br>actualización</span></a>
+				<a href="#presentar declaracion" class="action_button"><span class="icon">L</span><span class="ab_txt">Presentar<br>declaración</span></a>
+				<a href="#facturar electronicamente" class="action_button"><span class="icon">K</span><span class="ab_txt">Facturar<br>Electrónicamente</span></a><br class="mobile">
+				<a href="#creditos fiscales" class="action_button"><span class="icon">J</span><span class="ab_txt">Créditos<br>fiscales</span></a>
+				<a href="#devoluciones y compensaciones" class="action_button"><span class="icon">I</span><span class="ab_txt">Devoluciones y<br>compensaciones</span></a>
+				<a href="#consultas y servicios" class="action_button"><span class="icon">H</span><span class="ab_txt">Consultas y<br>servicios</span></a>
+				<a href="#comercio exterior" class="action_button"><span class="icon">G</span><span class="ab_txt">Comercio<br>exterior</span></a>
+			</div>
+			<div class="ab_sub ab_b" id="ab_sub_2">
+				<span class=""><img src="img/logo_sat.png"></span>
+				<span class=""><img src="img/logo_infonavit_.png"></span><br class="mobile">
+				<span class=""><img src="img/logo_imss.png"></span>
+				<span class=""><img src="img/logo_conagua.png"></span>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			$('.ab_bz').mouseover(function()
+			{
+				ab_reset();
+				
+				$(this).addClass('ab_active');
+				
+				var n = $(this).attr('data_i');
+				
+				$('#ab_sub_' + n).show();
+			});
+			
+			$('.ab_sub, #action_bar').mouseleave(ab_reset);
+			
+			function ab_reset()
+			{
+				$('.ab_bz').removeClass('ab_active');
+				$('.ab_sub').hide();
+			}
+			
+		</script>
+		
+		<div id="breadcrumbs" class="pw"><span>Inicio</span> > ... > <span>Ofrecimiento de garantías</span> > Ofrecimiento de garantía a través del embargo en la vía administrativa...</div>
+		
+		<div id="content">
+			<div class="pw">
+				<div id="header" class="full_width">
+					<h1>Normatividad</h1>
+					<p>Aquí encontrará diversos ordenamientos que podrá consultar para mantenerse informado de las disposiciones fiscales aplicables.</p>
+				</div>
+				
+				<div id="main" class="full_width">
+					
+					<div class="collapsible">
+						<h4>Normatividad 2015</h4>
+						<div class="c">
+							<span class="full float_left margin_bottom_10"><a href="#">Acuerdo</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Criterios</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Formas y formatos fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Instructivo de Operación para la recepción de contribuciones al comercio exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Leyes fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Manuales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Modificaciones</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Otras disposiciones fiscales publicadas en el Diario Oficial de la Federación</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglamentos</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas Generales de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas de Carácter General en Materia de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución Miscelánea Fiscal</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución de facilidades administrativas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tesis y sentencias</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia de comercio exterior y cuestiones relacionadas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia fiscal y cuestiones relacionadas</a></span>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						
+						<h4>Normatividad 2014</h4>
+						
+						<p class="margin_bottom_20">Descripción breve del tipo de trámites: Lorem ipsum dolor sit amet ...</p>
+						
+						<div class="c d collapsed">
+							<span class="full float_left margin_bottom_10"><a href="#">Acuerdo</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Criterios</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Formas y formatos fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Instructivo de Operación para la recepción de contribuciones al comercio exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Leyes fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Manuales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Modificaciones</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Otras disposiciones fiscales publicadas en el Diario Oficial de la Federación</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglamentos</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas Generales de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas de Carácter General en Materia de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución Miscelánea Fiscal</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución de facilidades administrativas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tesis y sentencias</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia de comercio exterior y cuestiones relacionadas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia fiscal y cuestiones relacionadas</a></span>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						
+						<h4>Normatividad 2013</h4>
+						
+						<p class="margin_bottom_20">Descripción breve del tipo de trámites: Lorem ipsum dolor sit amet ...</p>
+						
+						<div class="c d collapsed">
+							<span class="full float_left margin_bottom_10"><a href="#">Acuerdo</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Criterios</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Formas y formatos fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Instructivo de Operación para la recepción de contribuciones al comercio exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Leyes fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Manuales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Modificaciones</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Otras disposiciones fiscales publicadas en el Diario Oficial de la Federación</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglamentos</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas Generales de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas de Carácter General en Materia de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución Miscelánea Fiscal</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución de facilidades administrativas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tesis y sentencias</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia de comercio exterior y cuestiones relacionadas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia fiscal y cuestiones relacionadas</a></span>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						
+						<h4>Normatividad 2012</h4>
+						
+						<p class="margin_bottom_20">Descripción breve del tipo de trámites: Lorem ipsum dolor sit amet ...</p>
+						
+						<div class="c d collapsed">
+							<span class="full float_left margin_bottom_10"><a href="#">Acuerdo</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Criterios</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Formas y formatos fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Instructivo de Operación para la recepción de contribuciones al comercio exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Leyes fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Manuales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Modificaciones</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Otras disposiciones fiscales publicadas en el Diario Oficial de la Federación</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglamentos</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas Generales de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas de Carácter General en Materia de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución Miscelánea Fiscal</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución de facilidades administrativas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tesis y sentencias</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia de comercio exterior y cuestiones relacionadas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia fiscal y cuestiones relacionadas</a></span>
+						</div>
+					</div>
+					
+					<div class="collapsible">
+						
+						<h4>Normatividad 2011</h4>
+						
+						<p class="margin_bottom_20">Descripción breve del tipo de trámites: Lorem ipsum dolor sit amet ...</p>
+						
+						<div class="c d collapsed">
+							<span class="full float_left margin_bottom_10"><a href="#">Acuerdo</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Criterios</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Formas y formatos fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Instructivo de Operación para la recepción de contribuciones al comercio exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Leyes fiscales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Manuales</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Modificaciones</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Otras disposiciones fiscales publicadas en el Diario Oficial de la Federación</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglamentos</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas Generales de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Reglas de Carácter General en Materia de Comercio Exterior</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución Miscelánea Fiscal</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Resolución de facilidades administrativas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tesis y sentencias</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia de comercio exterior y cuestiones relacionadas</a></span>
+							<span class="full float_left margin_bottom_10"><a href="#">Tratados en materia fiscal y cuestiones relacionadas</a></span>
+						</div>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				
+				<img alt="" src="img/desk_ar_bottom_bar.jpg" id="deskArBottomBar" class="center">
+				<img alt="" src="img/tablet_ar_bottom_bar.jpg" id="tabletArBottomBar" class="center" style="margin: 60px auto;">
+				<img alt="" src="img/mobile_ar_bottom_bar.jpg" id="mobileArBottomBar" class="center">
+				
+			</div>
+			
+			<div id="footer">
+				<div class="pw">
+					<img alt="" src="img/social_buttons.jpg" class="social" usemap="socialMap">
+					<map name="socialMap" id="socialMap">
+						<area shape="circle" coords="21,21,21" href="#twitter" />
+						<area shape="circle" coords="71,21,21" href="#facebook" />
+						<area shape="circle" coords="121,21,21" href="#youtube" />
+						<area shape="circle" coords="171,21,21" href="#sitemap" />
+					</map>
+					<div class="txt">
+						<div class="f_txt">
+							<h6>Portal de trámites<br>y servicios</h6>
+							<p><a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Buzón tributario</h6>
+							<p><a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Enlaces a otros organismos</h6>
+							<p><a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la</a><br>
+								<a href="#">información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito</a><br>
+								<a href="#">Público</a></p>
+						</div>
+						<div class="f_txt">
+							<h6>Contacto</h6>
+							<p>Av. Hidalgo 77, Col. Guerrero,</a><br>
+								C.P. 06300 México D.F.</p>
+							<p>Atención telefónica</a><br>
+								01-800-46-36-728, desde</a><br>
+								Estados Unidos y Canadá</a><br>
+								01-877-44-88-728</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="links mobile">
+						<span>Portal de Trámites y Servicios
+							<p>
+								<a href="#">Declaraciones</a><br>
+								<a href="#">Datos padronales</a><br>
+								<a href="#">Factura electrónica</a><br>
+								<a href="#">Créditos fiscales</a><br>
+								<a href="#">Devoluciones</a><br>
+								<a href="#">Inscripciones</a><br>
+								<a href="#">Consultas</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Calendario</a><br>
+								<a href="#">Padrones</a><br>
+								<a href="#">Subastas SAT</a><br>
+								<a href="#">Mis cuentas</a><br>
+								<a href="#">Citas</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Buzón Tributario
+							<p>
+								<a href="#">Información</a><br>
+								<a href="#">Trámites</a><br>
+								<a href="#">Productos</a><br>
+								<a href="#">Notificaciones</a><br>
+								<a href="#">Aplicaciones</a><br>
+								<a href="#">Noticias</a><br>
+								<a href="#">Agenda</a><br>
+								<a href="#">Ayuda</a>
+							</p>
+						</span>
+						<span>Enlaces a otros organismos
+							<p>
+								<a href="#">Gobierno de México gob.mx</a><br>
+								<a href="#">Portal de transparencia</a><br>
+								<a href="#">Instituto Federal de acceso a la información y protección de datos</a><br>
+								<a href="#">Secretaría de Hacienda y Crédito Público</a>
+							</p>
+						</span>
+						<span>Contacto
+							<p>Av. Hidalgo 77, Col. Guerrero,<br> C.P. 06300 México D.F.</p>
+							<p>Atención telefónica<br>01-800-46-36-728, desde<br>Estados Unidos y Canadá<br>01-877-44-88-728</p>
+						</span>
+					</div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

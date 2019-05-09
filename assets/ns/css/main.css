@@ -1,0 +1,180 @@
+html
+{
+	
+}
+
+body
+{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-image:url(../img/bg.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	font-size:12px;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+#app
+{
+	width:1024px;
+	height:768px;
+	margin:auto auto auto auto;
+}
+
+#header
+{
+	width:1024px;
+	height:63px;
+}
+
+#content
+{
+	width:1024px;
+	height:705px;
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+
+#content table td img
+{
+	display:block;
+	border:0;
+}
+
+#menu
+{
+	width:254px;
+	height:705px;
+	top:63px;
+	left:0;
+	position:absolute;
+	z-index:9999;
+}
+
+#menu a
+{
+	display:block;
+	border:0;
+	text-decoration:none;
+	width:254px;
+}
+
+#menu td
+{
+	width:254px;
+}
+
+#menu_home			{height:103px;}
+#menu_video			{height:85px;}
+#menu_residencial	{height:82px;}
+#menu_amenities		{height:83px;}
+#menu_master_plan	{height:84px;}
+#menu_folleto		{height:87px;}
+#menu_elige_depa	{height:77px;}
+#menu_mis_deptos	{height:104px;}
+
+#menu_home a		{background-image:url(../img/menu/home.png); height:103px;}
+#menu_video a		{background-image:url(../img/menu/video.png); height:85px;}
+#menu_residencial a	{background-image:url(../img/menu/residencial.png); height:82px;}
+#menu_amenities a	{background-image:url(../img/menu/amenities.png); height:83px;}
+#menu_master_plan a	{background-image:url(../img/menu/master_plan.png); height:84px;}
+#menu_folleto a		{background-image:url(../img/menu/folleto.png); height:87px;}
+#menu_elige_depa a	{background-image:url(../img/menu/elige_depa.png); height:77px;}
+#menu_mis_deptos a	{background-image:url(../img/menu/mis_deptos.png); height:104px;}
+
+#menu_home a:hover			{background-image:url(../img/menu/active_home.png);}
+#menu_video a:hover			{background-image:url(../img/menu/active_video.png);}
+#menu_residencial a:hover	{background-image:url(../img/menu/active_residencial.png);}
+#menu_amenities a:hover		{background-image:url(../img/menu/active_amenities.png);}
+#menu_master_plan a:hover	{background-image:url(../img/menu/active_master_plan.png);}
+#menu_folleto a:hover		{background-image:url(../img/menu/active_folleto.png);}
+#menu_elige_depa a:hover	{background-image:url(../img/menu/active_elige_depa.png);}
+#menu_mis_deptos a:hover	{background-image:url(../img/menu/active_mis_deptos.png);}
+
+#logo
+{
+	height:63px;
+	width:150px;
+	float:left;
+}
+
+#mira
+{
+	width:200px;
+	height:63px;
+	float:right;
+}
+
+#lightbox
+{
+	width:1024px;
+	height:768px;
+	background-image:url(../img/modal.png);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:999;
+	display:none;
+	text-align:center;
+}
+
+#arrows
+{
+	width:1024px;
+	height:768px;
+	background-image:url(../img/folleto/arrows.png);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.caracteristicas
+{
+	padding-top:10px;
+}
+
+.cart_item
+{
+	width:278px;
+	height:239px;
+	display:block;
+	background-color:#eeeeee;
+}
+
+.cart_img
+{
+	max-width:139px;
+	max-height:239px;
+	display:block;
+	margin:auto auto;
+	float:left;
+}
+.cart_descr
+{
+	padding-left:10px;
+	width:129px;
+	height:239px;
+	float:right;
+	color:#dcdcdd;
+	background-color:#333;
+}
+#email_form_container
+{
+	width:1024px;
+	height:768px;
+	background-color:black;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;
+	display:none;
+}
+
+.cart_buttons
+{
+	float:right;
+	margin-right:10px;
+}
